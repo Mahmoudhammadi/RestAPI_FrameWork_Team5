@@ -43,7 +43,7 @@ public class TestTwitterAPI  {
     public void testUserCanNotTweetTheSameTweetTwiceInARow() {
         // 1. user send a tweet
         // String tweet="We are learning RestAPI Automation and Tweet check"+ UUID.randomUUID().toString();
-        String tweet = "salah is in love with lm";
+        String tweet = "HEllo THere";
         ValidatableResponse response = this.client.createNewTweet(tweet);
         // 2. Verify that the tweet was successful
         response.statusCode(200);
@@ -64,7 +64,7 @@ public class TestTwitterAPI  {
 
     @Test(enabled = true)
     public void testTweetDeleted() {
-        String tweet = "azul felawen saha ftorkom";
+        String tweet = "Hello there ";
         ValidatableResponse response = this.client.deleteTweet(1309883952501579778l);
         // Verify that the tweet was successfully deleted
         response.statusCode(200);
@@ -75,8 +75,8 @@ public class TestTwitterAPI  {
     @Test(enabled = true)
 
     public void testInfoTweet() {
-        String tweet = "avridh ireglen asnarz assalo";
-        ValidatableResponse response = this.client.getTweetInfo(1309883952501579778l);
+        String tweet = "LIve and Die on this Day ";
+        ValidatableResponse response = this.client.getTweetInfo(1387170021072379909l);
         response.statusCode(200);
         String actualTweet = response.extract().body().path("text");
         Assert.assertEquals(tweet, actualTweet);

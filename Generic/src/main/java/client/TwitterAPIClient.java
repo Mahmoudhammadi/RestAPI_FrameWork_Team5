@@ -26,7 +26,7 @@ public class TwitterAPIClient {
         inputStream=null;
         try{
             //read the secret propreties file
-            this .inputStream=new FileInputStream("/Users/Mahmoud/IdeaProjects/RestAPI_FrameWork_Team5/Twitter/secret.properties");
+            this .inputStream=new FileInputStream("/Users/apple/IdeaProjects/RestAPI_FrameWork_Team5/Twitter/secret.properties");
             this.properties.load(this.inputStream);
             this.apiKey=this.properties.getProperty("apiKey");
             this.apiSecretKey=this.properties.getProperty("apiSecretKey");

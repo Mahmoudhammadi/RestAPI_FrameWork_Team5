@@ -1,0 +1,1 @@
+{"uuid":"6ee60d5b-9c81-459a-984a-d469f96907a3","name":"testTwitter.TestTwitterAPI","children":["dd9421de-e06f-4d21-bd76-5a5ce700c63c"],"befores":[{"name":"setupTweetClient","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1619562199603,"stop":1619562199616}],"afters":[],"links":[],"start":1619562199386,"stop":1619562202499}
