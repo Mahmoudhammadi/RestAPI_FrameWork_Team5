@@ -19,6 +19,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 <!--        <maven.compiler.source>1.8</maven.compiler.source>-->
 <!--        <maven.compiler.target>1.8</maven.compiler.target>-->
+        <!--        <allure report dependency////////////////////>-->
         <aspectj.version>1.9.6</aspectj.version>
     </properties>
     <dependencyManagement>
@@ -155,6 +156,7 @@
                 <version>4.3.0</version>
             </dependency>
             <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
+            <!--        <allure report dependency////////////////////>-->
             <dependency>
                 <groupId>io.qameta.allure</groupId>
                 <artifactId>allure-testng</artifactId>
@@ -193,7 +195,7 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>target/test-classes/Tweet.xml</suiteXmlFile>
                     </suiteXmlFiles>
-
+                    <!--        <allure report dependency////////////////////>-->
                 <argLine>
                     -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                 </argLine>
