@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="TypiCode" />
         <module name="Twitter" />
+        <module name="jsonplaceholder" />
         <module name="Generic" />
       </profile>
     </annotationProcessing>
